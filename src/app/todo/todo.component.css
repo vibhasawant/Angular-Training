@@ -1,0 +1,14 @@
+h1 {
+    color: brown;
+}
+div{
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+}
+.item{
+    color: white;
+    background-color: gray;
+}

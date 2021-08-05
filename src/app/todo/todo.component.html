@@ -1,0 +1,13 @@
+<div class="title">
+    <h1>Todo Application</h1>
+</div>
+<div class="inputText">
+    <input id="todoinput" type="text" [(ngModel)] = "listItem">
+    <button (click)="addtodo()">Add TODO</button>
+</div>
+<div class="list">
+    <h3>Your todo list:</h3>
+    <div *ngFor = "let item of list" class = "item">
+        <ul>* {{item}}</ul>
+    </div>
+</div>

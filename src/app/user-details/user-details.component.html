@@ -1,0 +1,20 @@
+<h1>User Details</h1>
+<div class="form-wrapper">
+        <div style="margin-left: 10px;">
+            Name: <input type="text" name="name" id="name" [(ngModel)]="name">
+        </div>
+        <div style="margin-left: 10px;">Age: <input type="number" name="age" id="age" [(ngModel)]="age"></div>
+        <div style="margin-left: 10px;">Gender: <input type="text" name="gender" id="gender" [(ngModel)]="gender"></div>
+        <div style="margin-left: 10px;"><button (click)="addUserToList()">Add User</button></div>
+    </div>
+    
+    
+    <h3>User List here :</h3>
+    <div class="wrapper">
+        <div class="user-detail-wrapper" *ngFor="let user of userDetails">
+            <div class="user-detail">Name: {{user.name}}</div>
+            <div class="user-detail" [ngClass]="user.gender == 'Female' ? 'female' : 'male'">Gender:{{user.gender}}</div>
+            <div class="user-detail" *ngIf="user.age > 23">Age :{{user.age}}</div>
+        </div>
+    </div>
+    

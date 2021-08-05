@@ -1,0 +1,10 @@
+div{
+    background: #b3dcff;
+    border: 1px solid;
+    padding: 10px;
+}
+
+span{
+    font-weight: bold;
+    margin: 30px;
+}
